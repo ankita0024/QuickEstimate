@@ -1,0 +1,119 @@
+<br><br><br><br><br>
+
+<!-- Active Projects -->
+<div class="container form-bas">
+    <h1>ACTIVE PROJECTS</h1>
+    <br><br><br><br>
+    <div class="row">
+        <table class="table table-striped table-ap" >
+            <thead>
+                <tr>
+                    <th>NEXUS ID</th>
+                    <th>PROJECT NAME</th>
+                    <th>PROGRESS STATUS</th>
+                </tr>
+            </thead>            
+            <tbody>
+                <tr *ngFor="let project of basicData">
+                    <td class="col-lg-2">{{project.nexusId}}</td>
+                    <td class="col-lg-3">{{project.projName}}</td>
+                    <td class="col-lg-7 web">
+                        <div class="progress">
+                            <div *ngIf="project.phase > 0 && project.phase < 30" class='progress-bar progress-bar-striped progress-bar-animated active progress-bar-danger' 
+                             role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':project.phase+'%'}">{{project.phase+'%'}}(Phase I)</div>
+
+                             <div *ngIf="project.phase > 30 && project.phase < 49" class='progress-bar progress-bar-striped progress-bar-animated active progress-bar-primary' 
+                             role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':project.phase+'%'}">{{project.phase+'%'}}(Phase II)</div>
+
+                             <div *ngIf="project.phase > 49 && project.phase < 80" class='progress-bar progress-bar-striped progress-bar-animated active progress-bar-info' 
+                             role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':project.phase+'%'}">{{project.phase+'%'}}(Phase III)</div>
+
+                             <div *ngIf="project.phase > 80 && project.phase < 100" class='progress-bar progress-bar-striped progress-bar-animated active progress-bar-success' 
+                             role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" [ngStyle]="{'width':project.phase+'%'}">{{project.phase+'%'}}(Phase IV)</div>
+
+                        </div>
+                    </td>
+                    <td class="col-lg-7 mob">20% (Phase I)</td>
+                </tr>
+            </tbody>
+        </table>
+       
+
+
+
+
+        <!--<table class="table table-striped table-ap">
+            <thead>
+                <tr>
+                    <th>NEXUS ID</th>
+                    <th>PROJECT NAME</th>
+                    <th>PROGRESS STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-lg-2">1456784566</td>
+                    <td class="col-lg-3">Project 1</td>
+                    <td class="col-lg-7 web">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20% (Phase I)</div>
+                        </div>
+                    </td>
+                    <td class="col-lg-7 mob">20% (Phase I)</td>
+                </tr>
+                <tr>
+                    <td class="col-lg-2">1456784567</td>
+                    <td class="col-lg-3">Project 2</td>
+                    <td class="col-lg-7 web">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active progress-bar-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">60% (Phase III)</div>
+                        </div>
+                    </td>
+                    <td class="col-lg-7 mob">60% (Phase III)</td>
+                </tr>
+                <tr>
+                    <td class="col-lg-2">1456784568</td>
+                    <td class="col-lg-3">Project 3</td>
+                    <td class="col-lg-7 web">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active progress-bar-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40% (Phase II)</div>
+                        </div>
+                    </td>
+                    <td class="col-lg-7 mob">40% (Phase II)</td>
+                </tr>
+                <tr>
+                    <td class="col-lg-2">1456784569</td>
+                    <td class="col-lg-3">Project 4</td>
+                    <td class="col-lg-7 web">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated active progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">80% (Phase IV)</div>
+                        </div>
+                    </td>
+                    <td class="col-lg-7 mob">80% (Phase IV)</td>
+                </tr>
+            </tbody>
+        </table>-->
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-2">
+            <p><strong>Phase I:</strong><br>Requirements</p>
+        </div>
+        <div class="col-lg-2">
+            <p><strong>Phase II:</strong><br>Design</p>
+        </div>
+        <div class="col-lg-2">
+            <p><strong>Phase III:</strong><br>Development</p>
+        </div>
+        <div class="col-lg-2">
+            <p><strong>Phase IV:</strong><br>Production</p>
+        </div>
+        <div class="col-lg-2">
+            <p><strong>Phase V:</strong><br>Deployment</p>
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
+</div>

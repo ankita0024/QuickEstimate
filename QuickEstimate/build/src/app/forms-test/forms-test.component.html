@@ -1,0 +1,116 @@
+<br><br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+
+
+
+<!-- Forms -->
+
+<div class="container form-bas">
+    <h1>TEST SPECIFICATIONS</h1>
+    <br><br>
+    <form #testForm="ngForm">
+        <div class="scroll-form">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Unit Testing</label>
+                    <input type="text" required minlength="5" placeholder="Enter the tool required" name="unitTest" id="unitTest" style="width:100%" #unitTest="ngModel" class="form-control input-lg" ngModel>
+                    <div *ngIf="unitTest.errors && (unitTest.dirty || unitTest.touched)" class="alert alert-danger">
+                        <div [hidden]="!unitTest.errors.required">
+                            Unit test tool is required
+                        </div>
+                        <div [hidden]="!unitTest.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <label>End-To-End Testing</label>
+                    <input type=" text " required minlength="5" placeholder="Enter the tool required" name="eteTest" id="eteTest" style="width:100% " class="form-control input-lg" #eteTest="ngModel" ngModel>
+                    <div *ngIf="eteTest.errors && (eteTest.dirty || eteTest.touched)" class="alert alert-danger">
+                        <div [hidden]="!eteTest.errors.required">
+                            End-To-End test tool is required
+                        </div>
+                        <div [hidden]="!eteTest.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Performance Testing</label>
+                    <input type="text" required minlength="5" placeholder="Enter the tool required" name="perfTest" id="perfTest" style="width:100%" class="form-control input-lg" #perfTest="ngModel" ngModel>
+                    <div *ngIf="perfTest.errors && (perfTest.dirty || perfTest.touched)" class="alert alert-danger">
+                        <div [hidden]="!perfTest.errors.required">
+                            End-To-End test tool is required
+                        </div>
+                        <div [hidden]="!perfTest.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <label>Security Testing</label>
+                    <input type=" text " required minlength="5" placeholder="Enter the tool required" name="secTest" id="secTest" style="width:100% " class="form-control input-lg" #secTest="ngModel" ngModel>
+                    <div *ngIf="secTest.errors && (secTest.dirty || secTest.touched)" class="alert alert-danger">
+                        <div [hidden]="!secTest.errors.required">
+                            Security test tool is required
+                        </div>
+                        <div [hidden]="!secTest.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Accessibility</label>
+                    <input type="text" required minlength="5" placeholder="Enter the specific requirements" style="width:100%" class="form-control input-lg" name="accessibility" id="accessibility" #accessibility="ngModel" ngModel>
+                    <div *ngIf="accessibility.errors && (accessibility.dirty || accessibility.touched)" class="alert alert-danger">
+                        <div [hidden]="!accessibility.errors.required">
+                            Accessibility tool is required
+                        </div>
+                        <div [hidden]="!accessibility.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <label>Multilingual Capabilities</label>
+                    <input type=" text " required minlength="5" placeholder="Enter the specific requirements" name="multiCapa" id="multiCapa" style="width:100%" class="form-control input-lg" #multiCapa="ngModel" ngModel>
+                    <div *ngIf="multiCapa.errors && (multiCapa.dirty || multiCapa.touched)" class="alert alert-danger">
+                        <div [hidden]="!multiCapa.errors.required">
+                            Multilingual Capabilities tool is required
+                        </div>
+                        <div [hidden]="!multiCapa.errors.minlength">
+                            Field must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3 form-group">
+                <a class="back-b btn form-control" routerLink="/app-tech-form" RouterLinkActive="active" style="text-decoration:none;width:100%">BACK</a>
+            </div>
+            <div class="col-lg-3 col-md-3 form-group">
+                <a routerLink="/app-upload-form" RouterLinkActive="active" style="text-decoration:none;"><button type="submit" class="next-b btn form-control" [disabled]="!testForm.form.valid" (click)="myPass(testForm.value)">NEXT</button></a>
+            </div>
+        </div>
+    </form>
+    <br>
+</div>
+
+<br><br><br><br><br>

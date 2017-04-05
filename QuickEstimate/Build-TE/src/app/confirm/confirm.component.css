@@ -1,0 +1,71 @@
+/*Paragraph Text for Confirm Page*/
+
+.para-two {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #16a085;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumb {
+    background-color: #c2c2a3;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: white!important;
+}
+
+.breadcrumb li .active {
+    font-weight: bold!important;
+}
+
+
+/*Hiding footer*/
+
+@media screen and (max-width: 768px) {
+    #foot {
+        display: none!important;
+    }
+    .slider {
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form-bas {
+        height: 100%;
+    }
+    .btn {
+        margin-top: 6px;
+    }
+}
+
+
+/*Container Border*/
+
+.form-bas {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    /*height: 450px;*/
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+.back-b {
+    color: #fff;
+    background-color: #16a085;
+}
+
+.next-b {
+    color: #fff;
+    background-color: #16a085;
+}

@@ -1,0 +1,126 @@
+<br><br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container" id="breadcrm">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+
+
+
+<!-- Forms -->
+
+<div class="container form-bas">
+    <h1>PROJECT DETAILS</h1>
+    <br><br>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+        <div class="scroll-form">
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Project Name</label>
+                    <input type="text" required minlength="5" pattern="[a-zA-Z0-9\s\-']+" placeholder="Enter the name of your project" name="projName" id="projName" style="width:100%" class="input-lg form-control" ngModel #projectName="ngModel">
+                    <div class="err-form" *ngIf="projectName.errors && (projectName.dirty || projectName.touched)" class="alert alert-danger">
+                        <div [hidden]="!projectName.errors.required">
+                            Project name is required
+                        </div>
+                        <div [hidden]="!projectName.errors.minlength">
+                            Project name must be at least 5 characters long
+                        </div>
+                        <div [hidden]="!projectName.errors.pattern">
+                            Invalid project name
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 form-group">
+                    <label>Proposal ID</label>
+                    <input type=" text " required maxlength="10" pattern="[1-9]{1}[0-9]+" placeholder="Enter 10 digit proposal ID e.g: 1234567890" name="propId" id="propId" style="width:100%" class="input-lg form-control" ngModel #proposalId="ngModel">
+                    <div *ngIf="proposalId.errors && (proposalId.dirty || proposalId.touched)" class="alert alert-danger">
+                        <div [hidden]="!proposalId.errors.required">
+                            Proposal ID is required
+                        </div>
+                        <div [hidden]="!proposalId.errors.maxlength">
+                            Proposal ID must be 10 characters long
+                        </div>
+                        <div [hidden]="!proposalId.errors.pattern">
+                            Invalid proposal ID
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Nexus ID</label>
+                    <input type="text" required maxlength="10" pattern="[1-9]{1}[0-9]+" placeholder="Enter the unique Nexus ID" name="nexusId" id="nexusId" style="width:100%" class="input-lg form-control" ngModel #nexusId="ngModel">
+                    <div *ngIf="nexusId.errors && (nexusId.dirty || nexusId.touched)" class="alert alert-danger">
+                        <div [hidden]="!nexusId.errors.required">
+                            Nexus ID is required
+                        </div>
+                        <div [hidden]="!nexusId.errors.minlength">
+                            Nexus ID must be 10 characters long
+                        </div>
+                        <div [hidden]="!nexusId.errors.pattern">
+                            Invalid nexus ID
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 form-group">
+                    <label>IG Account</label>
+                    <input type=" text " required minlength="5" placeholder="Enter the unique IG account details" name="igAccount" id="igAccount" style="width:100%" class="input-lg form-control" ngModel #igAccount="ngModel">
+                    <div *ngIf="igAccount.errors && (igAccount.dirty || igAccount.touched)" class="alert alert-danger">
+                        <div [hidden]="!igAccount.errors.required">
+                            IG account is required
+                        </div>
+                        <div [hidden]="!igAccount.errors.minlength">
+                            IG account must be at least 5 characters long
+                        </div>
+                        <!--<div [hidden]="!igAccount.errors.pattern">
+                        Invalid nexus ID
+                    </div>-->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-offset-1 col-lg-5 form-group">
+                    <label>Bid Owner</label>
+                    <input type="text" required placeholder="Enter the respective bid owner" name="bidOwner" id="bidOwner" style="width:100%" class="input-lg form-control" ngModel #bidOwner="ngModel">
+                    <div *ngIf="bidOwner.errors && (bidOwner.dirty || bidOwner.touched)" class="alert alert-danger">
+                        <div [hidden]="!bidOwner.errors.required">
+                            Bid owner is required
+                        </div>
+                        <!--<div [hidden]="!bidOwner.errors.minlength">
+                        IG account must be at least 5 characters long
+                    </div>-->
+                    </div>
+                </div>
+                <div class="col-lg-5 form-group">
+                    <label>Bid Minds</label>
+                    <input type=" text" required minlength="5" placeholder="Enter the name of minds involved" name="bidMinds" id="bidMinds" style="width:100%" class="input-lg form-control" ngModel #bidMinds="ngModel">
+                    <div *ngIf="bidMinds.errors && (bidMinds.dirty || bidMinds.touched)" class="alert alert-danger">
+                        <div [hidden]="!bidMinds.errors.required">
+                            Bid minds is required
+                        </div>
+                        <div [hidden]="!bidMinds.errors.minlength">
+                            Bid minds must be at least 5 characters long
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-lg-offset-5 col-lg-2 col-lg-offset-5 form-group">
+                <a routerLink="/app-tech-form" RouterLinkActive="active" style="text-decoration:none;width:100%"><button type="submit" [disabled]="!userForm.form.valid" (click)="myPass(userForm.value)" class="next-b btn form-control">NEXT</button></a>
+            </div>
+        </div>
+    </form>
+    <br>
+</div>
+
+
+<br><br><br><br><br>

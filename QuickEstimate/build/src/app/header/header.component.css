@@ -1,0 +1,42 @@
+/*Navigation Bar Style*/
+
+#main-nav {
+    background-color: #16a085;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+#myNavBar {
+    position: fixed;
+
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.a-nav {
+    color: white!important;
+}
+
+.nav .active a {
+    background-color: #c2c2a3!important;
+}
+
+.at-nav {
+    color: white!important;
+}
+
+.a-nav:hover {
+    background-color: #c2c2a3!important;
+}
+
+
+/*Active Points*/
+
+.active {
+    background-color: #c2c2a3;
+}

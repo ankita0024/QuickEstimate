@@ -1,0 +1,58 @@
+/*Image Styling for About Us*/
+
+.aus {
+    width: 100%;
+    height: 230px;
+    box-shadow: 5px 5px 5px lightgray;
+    border: 1px solid black;
+}
+
+.para-three {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-aus {
+    height: 500px;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #16a085;
+}
+
+
+/*Hiding footer*/
+
+@media screen and (max-width: 768px) {
+    #foot {
+        display: none!important;
+    }
+    .slider {
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form-bas {
+        height: 100%;
+    }
+    .btn {
+        margin-top: 6px;
+    }
+}
+
+
+/*Container Border*/
+
+.container {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}

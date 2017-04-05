@@ -1,0 +1,88 @@
+/* Breadcrumbs */
+
+.breadcrumb {
+    background-color: #c2c2a3;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: white!important;
+}
+
+.breadcrumb li .active {
+    font-weight: bold!important;
+}
+
+
+/*Basic Form*/
+
+.form-bas {
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #16a085;
+}
+
+@media screen and (max-width: 1120px) {
+    .form-bas {
+        box-shadow: none !important;
+        overflow-x: hidden!important;
+        overflow-y: auto!important;
+    }
+    .scroll-form {
+        overflow-y: none!important;
+        height: auto!important;
+    }
+}
+
+
+/*Hiding footer*/
+
+@media screen and (max-width: 768px) {
+    #foot {
+        display: none!important;
+    }
+    .slider {
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form-bas {
+        height: 100%;
+    }
+    button {
+        margin-top: 6px;
+    }
+}
+
+
+/*Container Border*/
+
+.container {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.next-b {
+    color: #fff;
+    background-color: #16a085;
+}
+
+.back-b {
+    color: #fff;
+    background-color: #16a085;
+}
+
+.scroll-form {
+    /*background-color: pink;*/
+    width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}

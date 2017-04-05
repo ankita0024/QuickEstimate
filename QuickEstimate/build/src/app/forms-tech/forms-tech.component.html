@@ -1,0 +1,76 @@
+<br><br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+
+
+<!-- Technology Forms Section -->
+<div class="container form-bas">
+     <form #techForm="ngForm">
+    <h1>TECHNOLOGY DETAILS</h1>
+    <br><br><br>
+    <ul class="nav nav-tabs centered">
+        <li class="active tab-b"><a data-toggle="tab" href="#home">FRONT-END SERVICES</a></li>
+        <li class="tab-b"><a data-toggle="tab" href="#menu1">BACK-END SERVICES</a></li>
+        <li class="tab-b"><a data-toggle="tab" href="#menu2">DATABASE SERVICES</a></li>
+    </ul>
+
+    <br><br>
+   
+    <!--Textbox for the respective id-->
+    <div class="tab-content">
+        
+        <div id="home" class="tab-pane in active">
+            <div class="form-group">
+
+                <tag-input ngModel id="frontEnd" name="frontEnd" #frontEnd="ngModel" [onlyFromAutocomplete]="true">
+                <tag-input-dropdown [autocompleteItems]=autocompleteItems [showDropdownIfEmpty]="true">
+                 </tag-input-dropdown>
+                </tag-input>
+
+            </div>
+        </div>
+        
+        <div id="menu1" class="tab-pane">
+            <div class="form-group">
+                <tag-input  ngModel id="backEnd" name="backEnd" #backEnd="ngModel" [onlyFromAutocomplete]="true">
+
+                  <tag-input-dropdown [autocompleteItems]=autocompleteBackEnd [showDropdownIfEmpty]="true">
+
+                 </tag-input-dropdown>
+                </tag-input>
+     
+
+            </div>
+        </div>
+        <div id="menu2" class="tab-pane">
+            <div class="form-group">
+                 <tag-input id="dbEnd" ngModel name="dbEnd" #dbEnd="ngModel" [onlyFromAutocomplete]="true">
+                  <tag-input-dropdown [autocompleteItems]=autocompleteDbEnd [showDropdownIfEmpty]="true">
+                  </tag-input-dropdown> 
+                </tag-input>
+            </div>
+        </div>
+    </div>
+
+    <!--Back and Next button-->
+    <br><br><br>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3">
+            <a class="back-b btn" routerLink="/app-basic-form" RouterLinkActive="active" style="text-decoration:none;width:100%">BACK</a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <a routerLink="/app-test-form" RouterLinkActive="active" style="text-decoration:none;"><button type="submit" class="next-b btn" style="width:100%;" (click)="myPass(techForm.value)">NEXT</button></a>
+        </div>
+    </div>
+</form>
+</div>
+
+             

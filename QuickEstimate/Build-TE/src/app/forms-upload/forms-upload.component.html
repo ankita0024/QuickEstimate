@@ -1,0 +1,46 @@
+<br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+
+<!-- Forms Upload Section -->
+<div class="container form-bas">
+    <div class="row">
+        <form #UploadForm="ngForm">
+            <h1>WORK BREAKDOWN STRUCTURE SECTION</h1>
+            <br><br>
+            <div class="col-lg-4 col-lg-offset-4">
+                <div class="fileUpload btn btn-primary upload next-b">
+                    <span>UPLOAD <span class="glyphicon glyphicon-cloud-upload"></span></span>
+                    <input type="file" class="uploadbtn" id="myExcel" name="myExcel" (click)="isValid()" (change)="onChange($event)" />
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <div class="row">
+        <p class="col-lg-8 col-lg-offset-2 para-two"><strong>Upload the filled up Excel Work Breakdown Structure Form</strong></p>
+    </div>
+    <br>
+    <div class="row">
+        <p class="col-lg-8 col-lg-offset-2 para-three">On uploading the document with all the datafields provided, our systems will run an estimation based on certain sound calculations, thereby, providing an estimation in terms of effort distribution, time duration and complexity-based overall statistics
+        </p>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3">
+            <button routerLink="/app-download-form" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%">BACK</button>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <button routerLink="/app-detailed-analysis" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%" [disabled]="!flag">NEXT</button>
+        </div>
+    </div>
+    <br><br>
+</div>

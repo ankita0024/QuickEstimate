@@ -1,0 +1,50 @@
+<br><br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+<!-- Forms Upload Section -->
+<div class="container form-bas">
+    <div class="row">
+        <form #UploadForm="ngForm">
+        <h1>WBS SECTION</h1>
+        <br><br><br>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href="src/app/wbs-form/test.xlsx" class="btn btn-primary upload down-b" download>
+                <p>DOWNLOAD <span class="glyphicon glyphicon-cloud-download"></span></p>
+            </a>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <a href=# class="btn btn-primary upload down-b">
+                 <input type="file" id="myExcel" name="myExcel" (change)="onChange($event)">
+                
+                <p>UPLOAD <span class="glyphicon glyphicon-cloud-upload"></span></p>
+            </a>
+        </div>
+
+        <div class="col-lg-2">
+        </div>
+        </form>
+    </div>
+    <br><br>
+    <div class="row">
+        <p class="para-three"><strong>Work Breakdown Structure</strong><br>Download the WBS form in Excel format and fill in the required data.<br>Once the data has been provided, upload the form.<br><br>On uploading, you would automatically be redirected to the next page.
+        </p>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-offset-5 col-lg-2 col-lg-offset-5">
+          
+            <a class="next-b btn" routerLink="/app-test-form" RouterLinkActive="active" style="text-decoration:none;width:100%">BACK</a>
+        </div>
+    </div>
+</div>

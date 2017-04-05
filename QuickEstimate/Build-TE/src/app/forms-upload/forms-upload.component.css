@@ -1,0 +1,137 @@
+/*Basic Form*/
+
+.form-bas {
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #16a085;
+}
+
+@media screen and (max-width: 1120px) {
+    .form-bas {
+        box-shadow: none!important;
+    }
+}
+
+
+/*Paragraph Text for Landing Page*/
+
+.para-one {
+    text-align: center;
+}
+
+
+/*Paragraph Text for Confirm Page*/
+
+.para-two {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+
+/*Image Styling for About Us*/
+
+.aus {
+    width: 100%;
+    height: 230px;
+    box-shadow: 5px 5px 5px lightgray;
+    border: 1px solid black;
+}
+
+.para-three {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-aus {
+    height: 500px;
+    box-shadow: 10px 5px 5px lightgray;
+}
+
+
+/*Upload Form Details*/
+
+.upload {
+    width: 100%;
+    height: 100px;
+    font-size: 2em;
+    padding-top: 35px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+.upload:hover {
+    background-color: seagreen;
+}
+
+.down-b {
+    background-color: #16a085;
+    color: #fff;
+}
+
+.down-u {
+    background-color: #16a085;
+    color: #fff;
+}
+
+.next-b {
+    background-color: #16a085;
+    color: #fff;
+}
+
+
+/* Breadcrumbs */
+
+.breadcrumb {
+    background-color: #c2c2a3;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: white!important;
+}
+
+.breadcrumb li .active {
+    font-weight: bold!important;
+}
+
+
+/*Container Border*/
+
+.container {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/* Button Upload */
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.fileUpload input.uploadbtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 20;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}

@@ -1,0 +1,22 @@
+<!-- Navigation Bar -->
+<nav class="navbar navbar-inverse" id="main-nav">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                </button>
+            <a class="navbar-brand at-nav" routerLink="/app-landing-page" RouterLinkActive="active">QEP</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="a-nav" routerLink="">Home</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="a-nav" routerLink="/app-active-project" RouterLinkActive="active">Estimation Options</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a class="a-nav" routerLink="/app-about-us" RouterLinkActive="active">About Us</a></li>
+                <li><a class="a-nav" (click)="logout()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;signOut</a></li>
+                <li><a class="a-nav" ><span>Hello {{name}}</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>

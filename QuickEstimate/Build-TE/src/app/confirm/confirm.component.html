@@ -1,0 +1,33 @@
+<br><br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a class="active" routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+
+<!-- Confirmation Section -->
+<div class="container form-bas">
+    <h1>CONFIRMATION</h1>
+    <br><br><br>
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <p class="para-two"><strong>Are all the information provided as per your liking?<br><br></strong>If not, feel free to go back and make sure your data is as per your need. Else do submit and we shall have an estimation ready in a moment.</p>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3">
+            <a class="back-b btn" routerLink="/app-download-form" RouterLinkActive="active" style="text-decoration:none;width:100%">BACK</a>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <a routerLink="" RouterLinkActive="active" style="text-decoration:none;width:100%"> <button type="button" class="next-b btn" style="width:100%;" (click)="pushData()">SUBMIT</button></a>
+
+        </div>
+    </div>
+    <br><br>
+</div>

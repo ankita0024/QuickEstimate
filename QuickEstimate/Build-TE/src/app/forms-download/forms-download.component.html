@@ -1,0 +1,51 @@
+<br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a class="active" routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+<!-- Download Form -->
+
+<div class="container form-bas">
+    <h1>WORK BREAKDOWN STRUCTURE SECTION</h1>
+    <br><br>
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+            <a href='src/app/wbs-form/test.xlsx' class="next-b btn btn-primary upload" (click)="isValid()" download>
+                <p>DOWNLOAD <span class="glyphicon glyphicon-cloud-download"></span></p>
+            </a>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <p class="para-three col-lg-8 col-lg-offset-2">WBS Sheet contains three sheets - Basis, User Interface and APIs/Database sheet respectively. Based on the data-points provided, an estimation will be returned to the user.<strong> Download the Form here.</strong><br><br></p>
+
+        <p class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2">
+            <strong>Step 1:</strong>
+            <br>Download the WBS Excel Form sheet<br>
+            <strong>Step 2:</strong>
+            <br>Replace the default values with the data required. Default values e.g: NA and '0'<br>
+        </p>
+        <p class="col-lg-4 col-md-4 col-sm-4">
+            <strong>Step 3:</strong>
+            <br>Provide all the required data-points<br>
+            <strong>Step 4:</strong>
+            <br>Input the required complexity for each parameter present<br>
+        </p>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-lg-offset-3 col-lg-3 col-md-offset-3 col-md-3">
+            <button routerLink="/app-test-form" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%">BACK</button>
+        </div>
+        <div class="col-lg-3 col-md-3">
+            <button routerLink="/app-upload-form" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%" [disabled]="!flag">NEXT</button>
+        </div>
+    </div>
+    <br><br>
+</div>

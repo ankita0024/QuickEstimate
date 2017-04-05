@@ -1,0 +1,10 @@
+/*Hiding footer*/
+
+@media screen and (max-width: 750px) {
+    #foot {
+        display: none!important;
+    }
+    .slider {
+        display: none;
+    }
+}

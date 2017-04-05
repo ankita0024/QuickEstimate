@@ -1,0 +1,49 @@
+<br><br><br><br><br>
+
+<!-- Saved Projects -->
+<div class="container form-bas">
+    <h1>SAVED PROJECTS</h1>
+    <br><br><br><br>
+    <div class="row">
+        <p class="label-t">SEARCH FOR THE REQUIRED PROJECT:</p>
+        <form>
+             <div class="form-group col-sm-10 col-sm-offset-1">
+                <input type="text" id="ser" name="ser" placeholder="Enter the project Nexus ID" #ser="ngModel" [(ngModel)]="listInp" class="form-control">
+             </div>
+        </form>
+    </div>
+    <br><br><br>
+    <div class="row">
+    
+        <div class="col-sm-10 col-sm-offset-1">
+         <table class="table table-bordered" style="width:100%;">
+            <thead style="text-align:center;">
+            <tr>
+                <th>Project Name</th>
+                <th>Proposal Id</th>
+                <th>Nexus Id</th>
+                <th>IG Account</th>
+                <th>Bid Owner</th>
+                <th>Bid Minds</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let project of basicData|SearchPipeFilter: listInp">
+                <td>{{ project.projName}}</td>
+                <td>{{ project.propId}}</td>
+                <td>{{ project.nexusId}}</td>
+                <td>{{ project.igAccount}}</td>
+                <td>{{ project.bidOwner}}</td>
+                <td>{{ project.bidMinds}}</td>
+            </tr>      
+            </tbody>
+         </table>
+        </div>
+
+<!--
+        <p class="para-four"><strong>Quick Estimate Portal also provides an avenue for any Mindtree Mind to <br>check up on existing projects in the system. So go ahead and <br>browse through.</strong></p><br>
+        <p class="para-three">Mindtree has dedicated projects allocated to various delivery centers, each specializing in
+            <br>particular technologies and frameworks. There are specific projects which are under consideration, <br>deployed or in certain other phase of the software development cycle. You <br>can find your respective project or get a layman's perspective
+            into the other <br>projects, provided you are aware of concerned project's Nexus ID</p>-->
+    </div>
+</div>

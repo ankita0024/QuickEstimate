@@ -1,0 +1,431 @@
+<br><br><br><br><br>
+
+<!-- Breadcrumbs -->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a routerLink="/app-basic-form" RouterLinkActive="active">Form Section</a></li>
+        <li><a class="active" routerLink="/app-detailed-analysis" RouterLinkActive="active">Detailed Analysis</a></li>
+        <li><a routerLink="/app-confirmation" RouterLinkActive="active">Confirmation</a></li>
+    </ol>
+</div>
+
+<!-- Detailed Analysis -->
+
+
+<br>
+
+<div class="container form-bas">
+    <ul class="nav nav-tabs centered">
+        <li class="active tab-table"><a data-toggle="tab" href="#home">BASIS SHEET</a></li>
+        <li class="tab-table"><a data-toggle="tab" href="#menu3">SUMMARY SHEET</a></li>
+        <li class="tab-table"><a data-toggle="tab" href="#menu1">USER INTERFACE</a></li>
+        <li class="tab-table"><a data-toggle="tab" href="#menu2">API AND DB</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <br>
+        <h3>Proposal/Project Name: {{projectName}}</h3>
+        <br>
+        <div id="home" class="tab-pane in active">
+            <div class="scroll-form">
+                <table class="table-bordered table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Non-Functional Requirements</th>
+                            <th>Basis</th>
+                            <th>Examples</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>No. of Users</td>
+                            <td>{{testArr[0]}}</td>
+                            <td>1, 10, 100....</td>
+                        </tr>
+                        <tr>
+                            <td>No. of Pages</td>
+                            <td>{{testArr[1]}}</td>
+                            <td>1, 10, 100....</td>
+                        </tr>
+                        <tr>
+                            <td>No. of Devices (Responsive)</td>
+                            <td>{{testArr[2]}}</td>
+                            <td>1, 3, 5....</td>
+                        </tr>
+                        <tr>
+                            <td>Actors</td>
+                            <td>{{testArr[3]}}</td>
+                            <td>End usersâ€¦.(Employee, Adminâ€¦.)</td>
+                        </tr>
+                        <tr>
+                            <td>Access Point</td>
+                            <td>{{testArr[4]}}</td>
+                            <td>Internet, Intranet, Extranet</td>
+                        </tr>
+                        <tr>
+                            <td>Browser Support</td>
+                            <td>{{testArr[5]}}</td>
+                            <td>IE 10+, Chrome, Firefox, Safari latest versions</td>
+                        </tr>
+                        <tr>
+                            <td>Devices Support</td>
+                            <td>{{testArr[6]}}</td>
+                            <td>iOS (Safari), Android (Chrome)</td>
+                        </tr>
+                        <tr>
+                            <td>Authentication Mechanism</td>
+                            <td>{{testArr[7]}}</td>
+                            <td>Anonymous, OpenID, AD, Facbook, Twitterâ€¦..</td>
+                        </tr>
+                        <tr>
+                            <td>Front-end development framework</td>
+                            <td>{{testArr[8]}}</td>
+                            <td>Angular, PHP (Symfony), React, .NET MVC, Javaâ€¦</td>
+                        </tr>
+                        <tr>
+                            <td>Back-end services development framework</td>
+                            <td>{{testArr[9]}}</td>
+                            <td>.NET, Java, PHP, Scala, NodeJS, PHP (Symfony)â€¦..</td>
+                        </tr>
+                        <tr>
+                            <td>Database</td>
+                            <td>{{testArr[10]}}</td>
+                            <td>SQL, mySQL, NoSQL, Mongoâ€¦..</td>
+                        </tr>
+                        <tr>
+                            <td>Server Operating System</td>
+                            <td>{{testArr[11]}}</td>
+                            <td>Windows, Windows Server, Linux, Ubuntuâ€¦.</td>
+                        </tr>
+                        <tr>
+                            <td>No. of UI Templates and Layouts</td>
+                            <td>{{testArr[12]}}</td>
+                            <td>1, 3, 5â€¦.</td>
+                        </tr>
+                        <tr>
+                            <td>Unit testing framework / tool</td>
+                            <td>{{testArr[13]}}</td>
+                            <td>Mocha-Chai, Jasmie-Karma, nUnit, jUnitâ€¦.</td>
+                        </tr>
+                        <tr>
+                            <td>End-end testing framework / tool</td>
+                            <td>{{testArr[14]}}</td>
+                            <td>Protractor, CodedUIâ€¦..</td>
+                        </tr>
+                        <tr>
+                            <td>Security Testing tool</td>
+                            <td>{{testArr[15]}}</td>
+                            <td>'Some Example'</td>
+                        </tr>
+                        <tr>
+                            <td>Performace Testing tool</td>
+                            <td>{{testArr[16]}}</td>
+                            <td>'Some Example'</td>
+                        </tr>
+                        <tr>
+                            <td>Accessibility Requirements</td>
+                            <td>{{testArr[17]}}</td>
+                            <td>WCAG, UAAGâ€¦</td>
+                        </tr>
+                        <tr>
+                            <td>Multilingual Capabilities</td>
+                            <td>{{testArr[18]}}</td>
+                            <td>English, RTL, Korean, Japaneseâ€¦.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="menu3" class="tab-pane col-12-sm">
+            <div class="table-responsive">
+                <table class="table-bordered table table-hover">
+                    <thead>
+                        <tr>
+                            <th class="col-xs-1">Phase</th>
+                            <th class="col-xs-3">Activities</th>
+                            <th class="col-xs-3">Person Days</th>
+                            <th class="col-xs-3">Person Weeks</th>
+                            <th class="col-xs-2">Effort Distribution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>User Interface</td>
+                            <td>User Interface Implementations (Front-End)</td>
+                            <td>{{personDayUI | number:'1.2-2'}}</td>
+                            <td>{{personWeekUI | number:'1.2-2'}}</td>
+                            <td>{{effortUI | number:'1.2-2'}}%</td>
+                        </tr>
+                        <tr>
+                            <td>Services/API</td>
+                            <td>Back-End: APIs, Web Services, Deployment Scripts, Configurations</td>
+                            <td>{{personDayAPI | number:'1.2-2'}}</td>
+                            <td>{{personWeekAPI | number:'1.2-2'}}</td>
+                            <td>{{effortAPI | number:'1.2-2'}}%</td>
+                        </tr>
+                        <tr>
+                            <td>Multilingual Capabilities</td>
+                            <td>{{testArr[18]}}</td>
+                            <td></td>
+                            <td></td>
+                            <td>{{mCapa | number:'1.2-2'}}%</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="font-weight: bold;">Total</td>
+                            <td>{{personDay | number:'1.2-2'}}</td>
+                            <td>{{personWeek | number:'1.2-2'}}</td>
+                            <td>{{totalEff | number:'1.2-2'}}%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="menu1" class="tab-pane col-12-sm">
+            <div class="table-responsive scroll-form">
+                <table class="table-bordered table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Components</th>
+                            <th>Units</th>
+                            <th>UI-View</th>
+                            <th>UI-Services</th>
+                            <th>UI-Logic and Model</th>
+                            <th>Total UI (ph)</th>
+                            <th>Unit Testing (ph)</th>
+                            <th>Total (pd)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Base</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Master Page and Page Layouts</td>
+                            <td>{{techArr[0]}}</td>
+                            <td>{{techArr[1]}}</td>
+                            <td>{{techArr[2]}}</td>
+                            <td>{{techArr[3]}}</td>
+                            <td>{{tUI[0] | number: '1.2-2'}}</td>
+                            <td>{{utUI[0] | number: '1.2-2'}}</td>
+                            <td>{{tot[0] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Responsive Templates</td>
+                            <td>{{techArr[4]}}</td>
+                            <td>{{techArr[5]}}</td>
+                            <td>{{techArr[6]}}</td>
+                            <td>{{techArr[7]}}</td>
+                            <td>{{tUI[1] | number: '1.2-2'}}</td>
+                            <td>{{utUI[1] | number: '1.2-2'}}</td>
+                            <td>{{tot[1] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Search Engine Optimization</td>
+                            <td>{{techArr[8]}}</td>
+                            <td>{{techArr[9]}}</td>
+                            <td>{{techArr[10]}}</td>
+                            <td>{{techArr[11]}}</td>
+                            <td>{{tUI[2] | number: '1.2-2'}}</td>
+                            <td>{{utUI[2] | number: '1.2-2'}}</td>
+                            <td>{{tot[2] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>HTML5, SASS Structure</td>
+                            <td>{{techArr[12]}}</td>
+                            <td>{{techArr[13]}}</td>
+                            <td>{{techArr[14]}}</td>
+                            <td>{{techArr[15]}}</td>
+                            <td>{{tUI[3] | number: '1.2-2'}}</td>
+                            <td>{{utUI[3] | number: '1.2-2'}}</td>
+                            <td>{{tot[3] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <th>Common</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Exception Handling and Logging</td>
+                            <td>{{techArr[16]}}</td>
+                            <td>{{techArr[17]}}</td>
+                            <td>{{techArr[18]}}</td>
+                            <td>{{techArr[19]}}</td>
+                            <td>{{tUI[4] | number: '1.2-2'}}</td>
+                            <td>{{utUI[4] | number: '1.2-2'}}</td>
+                            <td>{{tot[4] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Authentication and Authorization</td>
+                            <td>{{techArr[20]}}</td>
+                            <td>{{techArr[21]}}</td>
+                            <td>{{techArr[22]}}</td>
+                            <td>{{techArr[23]}}</td>
+                            <td>{{tUI[5] | number: '1.2-2'}}</td>
+                            <td>{{utUI[5] | number: '1.2-2'}}</td>
+                            <td>{{tot[5] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <th>Pages</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Page 1</td>
+                            <td>{{techArr[24]}}</td>
+                            <td>{{techArr[25]}}</td>
+                            <td>{{techArr[26]}}</td>
+                            <td>{{techArr[27]}}</td>
+                            <td>{{tUI[6] | number: '1.2-2'}}</td>
+                            <td>{{utUI[6] | number: '1.2-2'}}</td>
+                            <td>{{tot[6] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Page 2</td>
+                            <td>{{techArr[28]}}</td>
+                            <td>{{techArr[29]}}</td>
+                            <td>{{techArr[30]}}</td>
+                            <td>{{techArr[31]}}</td>
+                            <td>{{tUI[7] | number: '1.2-2'}}</td>
+                            <td>{{utUI[7] | number: '1.2-2'}}</td>
+                            <td>{{tot[7] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Page 3</td>
+                            <td>{{techArr[32]}}</td>
+                            <td>{{techArr[33]}}</td>
+                            <td>{{techArr[34]}}</td>
+                            <td>{{techArr[35]}}</td>
+                            <td>{{tUI[8] | number: '1.2-2'}}</td>
+                            <td>{{utUI[8] | number: '1.2-2'}}</td>
+                            <td>{{tot[8] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Page 4</td>
+                            <td>{{techArr[36]}}</td>
+                            <td>{{techArr[37]}}</td>
+                            <td>{{techArr[38]}}</td>
+                            <td>{{techArr[39]}}</td>
+                            <td>{{tUI[9] | number: '1.2-2'}}</td>
+                            <td>{{utUI[9] | number: '1.2-2'}}</td>
+                            <td>{{tot[9] | number: '1.2-2'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="menu2" class="tab-pane col-12-sm">
+            <div class="table-responsive scroll-form">
+                <table class="table-bordered table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Components</th>
+                            <th>API Complexity</th>
+                            <th>API Effort (ph)</th>
+                            <th>No. of Database Calls</th>
+                            <th>Data Model Complexity</th>
+                            <th>Data Model Effort (ph)</th>
+                            <th>Unit Testing (ph)</th>
+                            <th>Total API + Database(pd)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>API Services</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>API Service 1</td>
+                            <td>{{ApArr[0]}}</td>
+                            <td>{{apiComps[0] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[1]}}</td>
+                            <td>{{ApArr[2]}}</td>
+                            <td>{{dataComps[0] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[0] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[0] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>API Service 2</td>
+                            <td>{{ApArr[3]}}</td>
+                            <td>{{apiComps[1] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[4]}}</td>
+                            <td>{{ApArr[5]}}</td>
+                            <td>{{dataComps[1] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[1] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[1] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>API Service 3</td>
+                            <td>{{ApArr[6]}}</td>
+                            <td>{{apiComps[2] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[7]}}</td>
+                            <td>{{ApArr[8]}}</td>
+                            <td>{{dataComps[2] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[2] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[2] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>API Service 4</td>
+                            <td>{{ApArr[9]}}</td>
+                            <td>{{apiComps[3] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[10]}}</td>
+                            <td>{{ApArr[11]}}</td>
+                            <td>{{dataComps[3] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[3] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[3] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>API Service 5</td>
+                            <td>{{ApArr[12]}}</td>
+                            <td>{{apiComps[4] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[13]}}</td>
+                            <td>{{ApArr[14]}}</td>
+                            <td>{{dataComps[4] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[4] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[4] | number: '1.2-2'}}</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>API Service 6</td>
+                            <td>{{ApArr[15]}}</td>
+                            <td>{{apiComps[5] | number: '1.2-2'}}</td>
+                            <td>{{ApArr[16]}}</td>
+                            <td>{{ApArr[17]}}</td>
+                            <td>{{dataComps[5] | number: '1.2-2'}}</td>
+                            <td>{{utAPI[5] | number: '1.2-2'}}</td>
+                            <td>{{tAPI[5] | number: '1.2-2'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br><br><br>
+        <!--<div class="row">
+            <div class="col-lg-2 col-lg-offset-9">
+                <a class="btn btn-default" href=# style="width:100%">Download as PDF</a>
+            </div>
+        </div>-->
+        <div class="col-lg-4">
+            <a routerLink="/app-download-form" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%">BACK</a>
+        </div>
+        <div class="col-lg-4">
+            <a class="next-b btn btn-primary" (click)="onChange('pdf_download')" href=# style="width:100%">DOWNLOAD AS PDF</a>
+        </div>
+        <div class="col-lg-4">
+            <a routerLink="/app-confirmation" RouterLink="active" class="next-b btn btn-primary" href=# style="width:100%">NEXT</a>
+        </div>
+    </div>
+    <br><br><br>
+</div>

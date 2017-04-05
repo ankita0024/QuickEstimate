@@ -1,0 +1,81 @@
+   /*Hiding footer*/
+   
+   @media screen and (max-width: 768px) {
+       #foot {
+           display: none!important;
+       }
+       .slider {
+           display: none;
+       }
+       h1 {
+           font-size: 20px;
+       }
+       .form-bas {
+           height: 100%;
+       }
+       .btn {
+           margin-top: 6px;
+       }
+       .para-four {
+           font-size: 1em!important;
+       }
+       .para-three {
+           font-size: 0.8em!important;
+       }
+       .label-t {
+           font-size: 1em!important;
+       }
+   }
+   /*Basic Form*/
+   
+   .form-bas {
+       
+       box-shadow: 10px 5px 5px lightgray;
+   }
+   
+   h1 {
+       text-align: center;
+       font-weight: bold;
+       color: #16a085;
+   }
+   
+   @media screen and (max-width: 1120px) {
+       .form-bas {
+           box-shadow: none!important;
+           border: none!important;
+       }
+   }
+   /*Saved Projects Section*/
+   
+   #nid {
+       width: 80%!important;
+       height: 30px;
+       margin: 0 auto;
+   }
+   
+   input[type="text"] {
+       display: block;
+       margin: 0 auto;
+   }
+   
+   .label-t {
+       text-align: center;
+       font-weight: bold;
+       font-size: 1.2em;
+   }
+   
+   .para-four {
+       text-align: center;
+       font-size: 1.2em;
+       color: #16a085;
+   }
+   
+   .container {
+       border-left: 1px solid lightgray;
+       border-bottom: 1px solid lightgray;
+   }
+   
+   .para-three {
+       text-align: center;
+       font-size: 1.1em;
+   }

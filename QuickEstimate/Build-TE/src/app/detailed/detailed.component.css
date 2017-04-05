@@ -1,0 +1,184 @@
+ /*Detailed Analysis*/
+ 
+ .tab-det {
+     text-align: center!important;
+     font-size: 1.2em!important;
+ }
+ 
+ .tad {
+     padding: 5px!important;
+     text-align: center;
+ }
+ 
+ #sel1 {
+     width: 60%!important;
+ }
+ /*Centering the select tab*/
+ 
+ select {
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .para-five {
+     text-align: center;
+     font-size: 1.2em;
+ }
+ 
+ .right-side {
+     display: inline-block;
+ }
+ 
+ .form-bas {
+     border-left: 1px solid lightgray;
+     border-bottom: 1px solid lightgray;
+ }
+ 
+ h3 {
+     font-weight: bold;
+     text-align: center;
+ }
+ 
+ .para-three {
+     text-align: center;
+     font-size: 1.1em;
+ }
+ /*Basic Form*/
+ 
+ .form-bas {
+     box-shadow: 10px 5px 5px lightgray;
+     /*padding-bottom: 5%;*/
+ }
+ 
+ h1 {
+     text-align: center;
+     font-weight: bold;
+     color: #16a085;
+ }
+ 
+ @media screen and (max-width: 1120px) {
+     .form-bas {
+         box-shadow: none!important;
+         border: none!important;
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     #foot {
+         display: none!important;
+     }
+     .slider {
+         display: none;
+     }
+     h1 {
+         font-size: 20px;
+     }
+     .form-bas {
+         height: 100%;
+     }
+     .btn {
+         margin-top: 6px;
+     }
+     .para-four {
+         font-size: 1em!important;
+     }
+     .para-three {
+         font-size: 0.8em!important;
+     }
+     .label-t {
+         font-size: 1em!important;
+     }
+     .scroll-form {
+         overflow-x: scroll!important;
+         overflow-y: none!important;
+         height: auto!important;
+     }
+ }
+ 
+ .para-four {
+     text-align: center;
+     font-size: 1.2em;
+     color: #16a085;
+ }
+ 
+ .next-b {
+     color: white;
+     background-color: #16a085;
+ }
+ 
+ .back-b {
+     color: white;
+     background-color: #16a085;
+ }
+ /* Breadcrumbs */
+ 
+ .breadcrumb {
+     background-color: #c2c2a3;
+     text-align: center;
+     font-size: 1.1em;
+ }
+ 
+ .breadcrumb li a {
+     text-decoration: none;
+     color: white!important;
+ }
+ 
+ .breadcrumb li .active {
+     font-weight: bold!important;
+ }
+ 
+ .chart {
+     background-color: green;
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     position: relative;
+ }
+ 
+ .subchart {
+     position: absolute;
+     top: 10%;
+     left: 10%;
+     background-color: white;
+     height: 80%;
+     width: 80%;
+     border-radius: 50%;
+ }
+ 
+ .perText {
+     position: relative;
+     top: 45%;
+     left: 43%;
+     font-size: 20px;
+     font-weight: bold;
+ }
+ 
+ .scroll-form {
+     /*background-color: pink;*/
+     width: 100%;
+     height: 250px;
+     overflow-x: hidden;
+     overflow-y: scroll;
+     /*border: 0.5px solid dimgray;*/
+ }
+ 
+ .nav-tabs.centered>li,
+ .nav-pills.centered>li {
+     float: none!important;
+     display: inline-block;
+     *display: inline;
+     zoom: 1;
+ }
+ 
+ .nav-tabs.centered,
+ .nav-pills.centered {
+     text-align: center;
+ }
+ 
+ .nav-tabs.centered>li>a {
+     color: #16a085;
+ }
+ 
+ .tab-b {
+     font-size: 1.2em;
+ }
